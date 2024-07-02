@@ -149,4 +149,15 @@ stages:
               WebAppName: '$(WebsiteName)'
               Package: '$(build.artifactstagingdirectory)/**/PartsUnlimitedWebsite.zip'
           
+
+          - task: SonarCloudPrepare@2
+            inputs:
+              SonarCloud: 'sonarcloud_connection'
+              organization: 'bsp-devops'
+              scannerMode: 'MSBuild'
+          
+          - task: AzureRmWebAppDeployment@2
+            displayName: 
+            inputs:
+              
           
