@@ -89,7 +89,7 @@
             "value": "mct"
         },
         "adminPassword": {
-            "value": null
+            "value": "Password!234"
         },
         "patchMode": {
             "value": "AutomaticByOS"
